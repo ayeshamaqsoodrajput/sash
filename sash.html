@@ -2,8 +2,9 @@
 <html>
     <head>
     <title>sash</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-
 <body>
     <style>
         *{
@@ -18,6 +19,10 @@
         display: flex;
         flex-direction: column;
     }
+    .bar  h1{
+        color: white;
+    }
+
     .down{
         background-image: url('qwer.jpg');
         height: 50%;
@@ -30,32 +35,135 @@
         width: 100%;
         text-align: center;
     }
+    .up button{
+        width: 10%;
+        height: 30px;
+        border-radius: 30px;
+    }
+    .btn1{
+        background-color: #F900BF;
+        border-color: #F900BF;
+    }
+
+    .btn1 a{
+      color: white;
+    }
+    .btn2{
+        background-color:#FFD93D;
+        border-color:#FFD93D ;
+    }
+
+    .btn2 a{
+      color: white;
+    }
+    .btn3{
+        background-color:#4D96FF;
+        border-color:#4D96FF ;
+    }
+
+    .btn3 a{
+      color: white;
+    }
+    .btn4{
+        background-color:#FD5D5D;
+        border-color:#FD5D5D ;
+    }
+
+    .btn4 a{
+      color: white;
+    }
+    .back{
+        background-color: rgb(246, 242, 242);
+        height: 80vh;
+        width: 100%;
+    }
+    .back h1{
+        text-align: center;
+        color:black;
+        padding-top: 2%;
+    }
+    .back p{
+        text-align: center;
+        color: rgb(94, 81, 81);
+        padding-top: 1px;
+    }
+    .back .bit{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .btn5{
+        background-color:blue;
+        border-color: blue;
+        width: 10%;
+        height: 33px;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    .btn5 a{
+      color: white;
+    }
+    .btn6{
+        background-color: white;
+        border-color: white;
+        width: 10%;
+        height: 33px;
+        border-radius: 30px;
+    }
+
+    .btn6{
+      color: black;
+    }
+    .btn7{
+        background-color: white;
+        border-color: white;
+        width: 15%;
+        height: 33px;
+        border-radius: 30px;
+    }
+
+    .btn7{
+      color: black;
+    }
+    .btn8{
+        background-color: white;
+        border-color: white;
+        width: 20%;
+        height: 33px;
+        border-radius: 30px;
+    }
+
+    .btn8{
+      color: black;
+    }
 </style>
 <div class="cont">
-<div class="me">
+<div class="br">
     <h1>Sash</h1>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Themes</a></li>
-        <li><a href="#">Screenshot</a></li>
-        <li><a href="#">Video</a></li>
-        <li><a href="#">Highlight</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Feathures</a></li>
-        <li><a href="#">Does</a></li>
-    </ul>
 </div>
         <div class="up">
             <h3>Bootstrap 5 HTML Admin Template</h3>
             <p>Sash - Now you can use this admin template to design stunning dashboards that will wow your target viewers or users to no end. To create a good and well  </br>
         -structured dashboard, you need to start from scratch with HTML, SCSS, CSS, and JS and with lots of coding, but by using this Sash-Admin template, you can       </br>
-        customise your dashboard effortlessly within no time. And we create our templates in a very professional manner to satisfy our clients.</p>
-        <button></button>    
+        customise your dashboard effortlessly within no time. And we create our templates in a very professional manner to satisfy our clients.</p> 
+        <button class="btn1"><a href="#">Preview</a></button>
+        <button class="btn2"><a href="#">Documention</a></button>
+        <button class="btn3"><a href="#">Purchase now</a></button>
+        <button class="btn4"><a href="#">Licenses</a></button>
         </div>
             <div class="down">
-
             </div>
-        
+    </div>
+    <div class="back">
+      <h1>Sash Dashboard Demos</h1>
+      <p>Here, Sash is available in the LTR and RTL versions with vertical and horizontal menus and comes with different types of </br> 
+    themes. So that users can choose their best theme and customize the Sash Admin template according to their choice.</p>
+  <div class="bit">
+    <button class="btn5"><a href="#">Default Theme</a></button>
+    <button class="btn6"><a href="#">Dark Theme</a></button>
+    <button class="btn7"><a href="#">Transparent Theme</a></button>
+    <button class="btn8"><a href="#">Transparent Theme with images</a></button>
+    </div>
     </div>
 </body>
 </html>
