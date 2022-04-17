@@ -1,169 +1,288 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <title>sash</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body>
     <style>
-        *{
+        * {
             margin: 0%;
             padding: 0%;
         }
-    .cont {
-        background-image:url('1.jpg');
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-    }
-    .bar  h1{
+
+        .cont {
+            background-image: url('1.jpg');
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+.cont .nav{
+    margin-top: 2%;
+}
+.cont .nav h3{
+    color: White;
+    margin-left: 7%;
+}
+.nav ul{
+    list-style: none;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    color: white;
+    margin-left: 10%;
+}
+ul li{
+    margin-left: 40px;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+        .down {
+            background-image: url('qwer.jpg');
+            height: 50%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .up {
+            height: 50%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .up button {
+            width: 10%;
+            height: 30px;
+            border-radius: 30px;
+        }
+
+        .btn1 {
+            background-color: #F900BF;
+            border-color: #F900BF;
+        }
+
+        .btn1 a {
+            color: white;
+        }
+
+        .btn2 {
+            background-color: #FFD93D;
+            border-color: #FFD93D;
+        }
+
+        .btn2 a {
+            color: white;
+        }
+
+        .btn3 {
+            background-color: #4D96FF;
+            border-color: #4D96FF;
+        }
+
+        .btn3 a {
+            color: white;
+        }
+
+        .btn4 {
+            background-color: #FD5D5D;
+            border-color: #FD5D5D;
+        }
+
+        .btn4 a {
+            color: white;
+        }
+
+        .back {
+            background-color: rgb(237, 244, 252);
+            height: 95vh;
+            width: 100%;
+        }
+
+        .back h1 {
+            text-align: center;
+            color: black;
+            padding-top: 2%;
+        }
+
+        .back p {
+            text-align: center;
+            color: rgb(94, 81, 81);
+            padding-top: 1px;
+        }
+
+        .back .bit {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .btn5 {
+            background-color: blue;
+            border-color: blue;
+            width: 10%;
+            height: 35px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .btn6 {
+            background-color: white;
+            border-color: white;
+            width: 10%;
+            height: 35px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .btn7 {
+            background-color: white;
+            border-color: white;
+            width: 15%;
+            height: 35px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .btn8 {
+            background-color: white;
+            border-color: white;
+            width: 20%;
+            height: 35px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .left {
+            margin-left: 10%;
+            margin-right: 5%;
+        }
+
+        .left .img1 {
+            width: 40%;
+            height: 50%;
+            padding-top: 4%;
+            padding-left: 5%;
+        }
+
+        .left .img2 {
+            width: 40%;
+            height: 50%;
+            padding-top: 4%;
+            padding-left: 5%;
+        }
+
+        .img1:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .img2:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    .back .bot {
+            justify-content: center;
+            text-align: center;
+            margin-top: 4%;
+            flex-direction: row;
+        }
+        .btn9{
+            width: 7%;
+            height: 35px;
+            border-radius: 10px;
+        background-color:blue;
+        border-color:blue;
         color: white;
     }
-
-    .down{
-        background-image: url('qwer.jpg');
-        height: 50%;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
+    .btn10{
+        width: 7%;
+            height: 35px;
+            border-radius: 10px;
+        background-color:red;
+        border-color:red ;
+        color: white;
     }
-    .up{
-        height: 50%;
-        width: 100%;
+    .btn11{
+        width:7%;
+            height: 35px;
+            border-radius: 10px;
+        background-color:rgb(0, 236, 236);
+        border-color:rgb(0, 236, 236) ;
+        color: white;
+    }
+    .dash{
+        justify-content: center;
         text-align: center;
+        margin-top: 3%;
     }
-    .up button{
-        width: 10%;
-        height: 30px;
-        border-radius: 30px;
-    }
-    .btn1{
-        background-color: #F900BF;
-        border-color: #F900BF;
-    }
-
-    .btn1 a{
-      color: white;
-    }
-    .btn2{
-        background-color:#FFD93D;
-        border-color:#FFD93D ;
-    }
-
-    .btn2 a{
-      color: white;
-    }
-    .btn3{
-        background-color:#4D96FF;
-        border-color:#4D96FF ;
-    }
-
-    .btn3 a{
-      color: white;
-    }
-    .btn4{
-        background-color:#FD5D5D;
-        border-color:#FD5D5D ;
-    }
-
-    .btn4 a{
-      color: white;
-    }
-    .back{
-        background-color: rgb(246, 242, 242);
-        height: 80vh;
-        width: 100%;
-    }
-    .back h1{
-        text-align: center;
-        color:black;
-        padding-top: 2%;
-    }
-    .back p{
-        text-align: center;
-        color: rgb(94, 81, 81);
-        padding-top: 1px;
-    }
-    .back .bit{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .btn5{
-        background-color:blue;
-        border-color: blue;
-        width: 10%;
-        height: 33px;
-        border-radius: 30px;
-        text-align: center;
-    }
-
-    .btn5 a{
-      color: white;
-    }
-    .btn6{
-        background-color: white;
-        border-color: white;
-        width: 10%;
-        height: 33px;
-        border-radius: 30px;
-    }
-
-    .btn6{
-      color: black;
-    }
-    .btn7{
-        background-color: white;
-        border-color: white;
-        width: 15%;
-        height: 33px;
-        border-radius: 30px;
-    }
-
-    .btn7{
-      color: black;
-    }
-    .btn8{
-        background-color: white;
-        border-color: white;
-        width: 20%;
-        height: 33px;
-        border-radius: 30px;
-    }
-
-    .btn8{
-      color: black;
-    }
-</style>
-<div class="cont">
-<div class="br">
-    <h1>Sash</h1>
-</div>
+    </style>
+    <div class="cont">
+        <div class="nav">
+            <h3>sash</h3>
+            <ul>
+                <li>Home</li>
+                <li>themes</li>
+                <li>Screenshots</li>
+                <li>Video</li>
+                <li>heighlights</li>
+                <li>Services</li>
+                <li>Docs</li>
+                <li>Features</li>
+            </ul>
+        </div>
         <div class="up">
             <h3>Bootstrap 5 HTML Admin Template</h3>
-            <p>Sash - Now you can use this admin template to design stunning dashboards that will wow your target viewers or users to no end. To create a good and well  </br>
-        -structured dashboard, you need to start from scratch with HTML, SCSS, CSS, and JS and with lots of coding, but by using this Sash-Admin template, you can       </br>
-        customise your dashboard effortlessly within no time. And we create our templates in a very professional manner to satisfy our clients.</p> 
-        <button class="btn1"><a href="#">Preview</a></button>
-        <button class="btn2"><a href="#">Documention</a></button>
-        <button class="btn3"><a href="#">Purchase now</a></button>
-        <button class="btn4"><a href="#">Licenses</a></button>
+            <p>Sash - Now you can use this admin template to design stunning dashboards that will wow your target
+                viewers or users to no end. To create a good and well </br>
+                -structured dashboard, you need to start from scratch with HTML, SCSS, CSS, and JS and with lots of
+                coding, but by using this Sash-Admin template, you can </br>
+                customise your dashboard effortlessly within no time. And we create our templates in a very professional
+                manner to satisfy our clients.</p>
+            <button class="btn1"><a href="#">Preview</a></button>     &nbsp;
+            <button class="btn2"><a href="#">Documention</a></button>    &nbsp;
+            <button class="btn3"><a href="#">Purchase now</a></button>    &nbsp;
+            <button class="btn4"><a href="#">Licenses</a></button>     &nbsp;
         </div>
-            <div class="down">
-            </div>
+        <div class="down">
+        </div>
     </div>
     <div class="back">
-      <h1>Sash Dashboard Demos</h1>
-      <p>Here, Sash is available in the LTR and RTL versions with vertical and horizontal menus and comes with different types of </br> 
-    themes. So that users can choose their best theme and customize the Sash Admin template according to their choice.</p>
-  <div class="bit">
-    <button class="btn5"><a href="#">Default Theme</a></button>
-    <button class="btn6"><a href="#">Dark Theme</a></button>
-    <button class="btn7"><a href="#">Transparent Theme</a></button>
-    <button class="btn8"><a href="#">Transparent Theme with images</a></button>
+        <h1>Sash Dashboard Demos</h1>
+        <p>Here, Sash is available in the LTR and RTL versions with vertical and horizontal menus and comes with
+            different types of </br>
+            themes. So that users can choose their best theme and customize the Sash Admin template according to their
+            choice.</p>
+        <div class="bit">
+            <button class="btn5">Default Theme</button>     &nbsp;
+            <button class="btn6">Dark Theme</button>        &nbsp;
+            <button class="btn7">Transparent Theme</button>     &nbsp;
+            <button class="btn8">Transparent Theme with images</button>    &nbsp;
+        </div>
+        <div class="left">
+            <img src="img1.jpg" class="img1">
+            <img src="img1.jpg" class="img2">
+        </div>
+        <div class="bot">
+            <button class="btn9">Buy Now</button>   &nbsp;
+            <button class="btn10">Preview</button>    &nbsp;
+            <button class="btn11">Licenses</button>    &nbsp;
+        </div>
     </div>
+    <div class="dash">
+        <h4>Check out our Dashboard Screenshots</h4>
+     <p>Check out our most attractive dashboard screenshots that are available in the Sash admin template.</p>
     </div>
+    <div class="slideshow-container">  
 </body>
+
 </html>
