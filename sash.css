@@ -300,16 +300,18 @@ div.desc {
 }
 
 .rights {
-    background-image: url('23.jpg');
     height: 40vh;
     width: 30%;
     justify-content: center;
     background-position: center;
     margin-right: 5%;
     margin-left: 10%;
-    margin-top: 3%;
+    margin-top: 5%;
 }
-
+.embed-responsive-item{
+    height: 90%;
+    width: 80%;
+}
 .sash .bi {
     margin-top: 4%;
     flex-direction: row;
@@ -356,7 +358,6 @@ div.desc {
 }
 
 .left2 {
-    background-image: url('24.jpg');
     height: 60vh;
     width: 30%;
     justify-content: center;
@@ -364,7 +365,10 @@ div.desc {
     margin-right: 5%;
     margin-left: 10%;
     margin-top: 5%;
-    border-radius: 50% 0% 50% 0%;
+}
+.embed-responsive-item2{
+    height: 90%;
+    width: 90%;
 }
 
 .right2 {
